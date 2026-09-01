@@ -194,27 +194,144 @@ body {
   width: 26px;
 }
 
-@media (max-width: 480px) {
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 32px 16px;
+  }
+
   .letter {
-    padding: 44px 26px 56px;
+    padding: 48px 36px 56px;
+  }
+
+  .postmark {
+    top: 16px;
+    right: 24px;
   }
 
   .heading .name {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .body-text {
-    font-size: 19px;
-    line-height: 1.95;
+    font-size: 18px;
+    line-height: 1.9;
   }
 
-  .music-section {
-    margin-top: 20px;
-    padding-top: 15px;
+  .seal {
+    bottom: 20px;
+    right: 28px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
   }
 
-  .play-btn {
+  .letter {
+    padding: 38px 20px 48px;
+    transform: rotate(-0.5deg);
+  }
+
+  .postmark {
+    top: 12px;
+    right: 16px;
+  }
+
+  .postmark .circle {
+    width: 64px;
+    height: 64px;
+    font-size: 10px;
+    border: 1px solid var(--ink-soft);
+  }
+
+  .heading .name {
+    font-size: 32px;
+    gap: 6px;
+  }
+
+  .divider {
+    width: 100px;
+    margin: 8px auto 20px;
+  }
+
+  .body-text {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .body-text p {
+    margin: 0 0 16px;
+  }
+
+  .closing {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+
+  .date-line {
     font-size: 14px;
-    padding: 10px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .music-icon {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .seal {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .seal svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .doodle.d1 {
+    top: 12px;
+    left: 20px;
+    width: 24px;
+  }
+
+  .doodle.d2 {
+    bottom: 80px;
+    left: 24px;
+    width: 18px;
+  }
+}
+
+/* Small phone devices */
+@media (max-width: 360px) {
+  body {
+    padding: 16px 8px;
+  }
+
+  .letter {
+    padding: 32px 16px 40px;
+  }
+
+  .heading .name {
+    font-size: 28px;
+  }
+
+  .body-text {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .closing {
+    font-size: 16px;
+  }
+
+  .music-icon {
+    font-size: 13px;
   }
 }
