@@ -2,171 +2,12 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Megha ❤ World Letter Day</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --desk: #E3D6B8;
-    --paper: #FBF3DE;
-    --paper-shadow: #E9DBB6;
-    --ink: #402B1E;
-    --ink-soft: #5C4632;
-    --rose: #A8425A;
-    --gold: #A87F35;
-    --seal: #7C2331;
-  }
-
-  *{ box-sizing: border-box; }
-
-  html, body{
-    margin:0;
-    padding:0;
-  }
-
-  body{
-    background:
-      radial-gradient(circle at 15% 20%, #EEE2C4 0%, transparent 45%),
-      radial-gradient(circle at 85% 80%, #EEE2C4 0%, transparent 45%),
-      var(--desk);
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:48px 20px;
-  }
-
-  .letter{
-    position:relative;
-    width:100%;
-    max-width:560px;
-    background:
-      repeating-linear-gradient(
-        var(--paper),
-        var(--paper) 38px,
-        #F3E6C7 39px
-      );
-    padding:56px 48px 64px;
-    transform: rotate(-1deg);
-    box-shadow:
-      0 2px 4px rgba(64,43,30,0.15),
-      0 18px 34px rgba(64,43,30,0.25);
-    clip-path: polygon(
-      0% 0.6%, 4% 0%, 9% 0.9%, 15% 0.2%, 21% 1%, 27% 0.1%, 33% 0.8%,
-      39% 0%, 45% 0.9%, 51% 0.1%, 57% 0.8%, 63% 0%, 69% 1%, 75% 0.2%,
-      81% 0.9%, 87% 0%, 93% 0.7%, 100% 0.2%,
-      100% 99.4%, 96% 100%, 91% 99.2%, 85% 100%, 79% 99.1%, 73% 100%,
-      67% 99.2%, 61% 100%, 55% 99.1%, 49% 100%, 43% 99.2%, 37% 100%,
-      31% 99.1%, 25% 100%, 19% 99.2%, 13% 100%, 7% 99.1%, 0% 100%
-    );
-  }
-
-  .postmark{
-    position:absolute;
-    top:22px;
-    right:34px;
-    text-align:center;
-    font-family:'Caveat', cursive;
-    color: var(--ink-soft);
-    opacity:0.75;
-    transform: rotate(6deg);
-  }
-  .postmark .circle{
-    width:74px;
-    height:74px;
-    border:1.5px solid var(--ink-soft);
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    font-size:12px;
-    line-height:1.15;
-    letter-spacing:0.5px;
-  }
-
-  .heading{
-    text-align:center;
-    margin:0 0 6px;
-  }
-  .heading .name{
-    font-family:'Caveat', cursive;
-    font-weight:700;
-    font-size:52px;
-    color: var(--rose);
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-  }
-
-  .divider{
-    width:120px;
-    height:1px;
-    background: var(--gold);
-    opacity:0.5;
-    margin:10px auto 30px;
-  }
-
-  .body-text{
-    font-family:'Atma', cursive;
-    font-weight:500;
-    font-size:21px;
-    line-height:2.05;
-    color: var(--ink);
-    letter-spacing:0.2px;
-  }
-  .body-text p{
-    margin:0 0 20px;
-  }
-
-  .closing{
-    font-family:'Atma', cursive;
-    font-weight:700;
-    font-size:24px;
-    color: var(--rose);
-    text-align:right;
-    margin-top:8px;
-  }
-
-  .date-line{
-    font-family:'Caveat', cursive;
-    font-size:18px;
-    color: var(--ink-soft);
-    opacity:0.8;
-    margin-top:38px;
-    text-align:left;
-  }
-
-  .seal{
-    position:absolute;
-    bottom:26px;
-    right:38px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background: var(--seal);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.35), inset 0 2px 4px rgba(255,255,255,0.15), inset 0 -3px 6px rgba(0,0,0,0.3);
-    transform: rotate(-8deg);
-  }
-  .seal svg{ width:26px; height:26px; }
-
-  .doodle{
-    position:absolute;
-    opacity:0.55;
-  }
-  .doodle.d1{ top:18px; left:36px; width:34px; }
-  .doodle.d2{ bottom:110px; left:44px; width:26px; }
-
-  @media (max-width:480px){
-    .letter{ padding:44px 26px 56px; }
-    .heading .name{ font-size:40px; }
-    .body-text{ font-size:19px; line-height:1.95; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -205,43 +46,15 @@
 
     <div class="closing">ভালোবাসি তোমাকে, আমার special one। 🫶</div>
     
-    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--gold); opacity: 0.6;">
-      <p style="font-family:'Atma', cursive; font-size: 16px; color: var(--ink-soft); margin: 0 0 12px; text-align: center;">🎵 একটি বিশেষ গান তোমার জন্য 🎵</p>
-      <audio id="bgMusic" loop style="display: none;">
-        <source src="Baundule Ghuri(বউনডল ঘড়)Dawshom AwbotaarShreya,Arijit,AnupamAnirban,JayaJioStudios SVF.mp3" type="audio/mpeg">
-      </audio>
-      <button id="playBtn" style="width: 100%; padding: 12px; background: var(--rose); color: white; border: none; border-radius: 4px; font-family:'Atma', cursive; font-size: 16px; cursor: pointer; transition: background 0.3s;">
-        🎵 গান চালু করুন (Click to Play)
-      </button>
-    </div>
+    <audio id="bgMusic" loop autoplay preload="auto">
+      <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
 
-    <script>
-      const audio = document.getElementById('bgMusic');
-      const playBtn = document.getElementById('playBtn');
-      
-      // Try to autoplay
-      audio.play().catch(() => {
-        // If autoplay fails, show button
-      });
-      
-      // Button click handler
-      playBtn.addEventListener('click', () => {
-        if (audio.paused) {
-          audio.play();
-          playBtn.textContent = '⏸️ গান বন্ধ করুন (Click to Stop)';
-        } else {
-          audio.pause();
-          playBtn.textContent = '🎵 গান চালু করুন (Click to Play)';
-        }
-      });
-      
-      // Update button text when audio ends
-      audio.addEventListener('ended', () => {
-        playBtn.textContent = '🎵 গান চালু করুন (Click to Play)';
-      });
-    </script>
-    
     <div class="date-line">১লা সেপ্টেম্বর ❤</div>
+    
+    <div class="music-icon" id="musicIcon">
+      🎵 একটি বিশেষ গান তোমার জন্য 🎵
+    </div>
 
     <div class="seal">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,5 +65,6 @@
 
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
